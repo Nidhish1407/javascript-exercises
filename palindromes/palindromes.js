@@ -1,5 +1,6 @@
 const palindromes = function(s) {
-   let str = s.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{1,}/g,"").toLowerCase();
+   // let str = s.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{1,}/g,"").toLowerCase();
+   let str = s.replace(/[^A-Za-z]/g, "").toLowerCase();
               
    let reverse= str.split("").reverse().join("");
 //    console.log(str);
